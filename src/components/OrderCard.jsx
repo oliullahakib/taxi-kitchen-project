@@ -10,7 +10,7 @@ const OrderCard = ({ order }) => {
             toast.error("This Item is Already Cooking")
         }
         else {
-            toast.success("Item added")
+            toast.success("Item Is Cooking!🧑‍🍳")
             setCookingData((prev) => [...prev, order])
         }
     }

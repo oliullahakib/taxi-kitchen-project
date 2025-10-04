@@ -4,7 +4,6 @@ import CookingCard from '../CookingCard';
 
 const CurrentCookingSection = () => {
     const {cookingData}=use(CookingContext)
-    console.log(cookingData)
     return (
         <div>
          {

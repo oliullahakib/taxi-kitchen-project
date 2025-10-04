@@ -1,8 +1,10 @@
-import React from "react";
+import React, { use } from "react";
 import { ChefHat, CookingPot, ScrollText, TicketCheck } from "lucide-react";
+import { ReadyToServe } from "../Context/readyToServeContex";
 
 const CurrentOrdersCard = () => {
-  const totalOrders = 3; // static number
+   const {readyToServe} =use(ReadyToServe)
+  const totalOrders = readyToServe.length; // static number
 
   return (
     <div className="border-4 border-dotted rounded-2xl border-warning p-5">

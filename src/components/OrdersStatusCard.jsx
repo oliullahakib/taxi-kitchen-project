@@ -5,8 +5,8 @@ import { useNavigate } from "react-router";
 
 const OrderStatusCard = () => {
   const navigate = useNavigate()
-  const orderData = use(OrderContext)
-  const totalOrders = orderData.length; 
+  const {orders} = use(OrderContext)
+  const totalOrders = orders.length; 
 
   return (
     <div onClick={()=>navigate('/')} className="border-4 border-dotted rounded-2xl border-warning p-5">
